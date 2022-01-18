@@ -10,6 +10,11 @@ export function LinksList() {
       </div>
       <div className="LinksListItem_Container">
         <LinksListItem />
+        <LinksListItem />
+        <LinksListItem />
+        <LinksListItem />
+        <LinksListItem />
+        <LinksListItem />
       </div>
     </div>
   );
