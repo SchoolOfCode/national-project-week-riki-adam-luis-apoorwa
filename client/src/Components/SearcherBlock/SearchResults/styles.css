@@ -1,0 +1,15 @@
+.SearchResults_Container {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.Search_FoundText_Container {
+  background-color: white;
+  height: 0.7rem;
+}
+
+#Search_Found_Text {
+  font-size: 1rem;
+  font-weight: 300;
+}
