@@ -3,10 +3,12 @@ import SearchInput from "./SearchInput/index"
 import AddButton from "./AddButton/index"
 import "./styles.css"
 
-export function SearchBar() {
+export function SearchBar({setInput}) {
+
+
     return (
     <div className="SearchInput_Container"> 
-    <SearchInput />
+    <SearchInput setInput={setInput}/>
     <AddButton />
     </div>
     )}
