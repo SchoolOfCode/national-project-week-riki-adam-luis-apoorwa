@@ -8,6 +8,7 @@ export function SearcherBlock() {
   const [links, setLinks] = useState([]);
   //state for the input
   const [input, setInput] = useState('')
+  //
 
   useEffect(() => {
     // https://soc-oneplace.herokuapp.com/weeks?subject=${javascript}
@@ -25,7 +26,7 @@ export function SearcherBlock() {
 
   return (
     <div className="SearchBlock_Container">
-      <SearchBar setInput={setInput}/>
+      <SearchBar setInput={setInput} input={input}/>
       <SearchResults />
     </div>
   );
