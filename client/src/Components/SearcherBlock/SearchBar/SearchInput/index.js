@@ -1,10 +1,9 @@
-import React from 'react';
-import './styles.css';
-import { useState } from 'react';
+import React from "react";
+import "./styles.css";
+import { useState } from "react";
 
-export function SearchInput({ setInput, input }) {
-//state for input
-const [search, setSearch] = useState('')
+export function SearchInput({ setInput, input, setSearch }) {
+  //state for input
 
   function handleChange(e) {
     const inputText = e.target.value;
@@ -13,13 +12,14 @@ const [search, setSearch] = useState('')
   }
 
   function handleClick() {
-    setSearch(input)
-    console.log(search)
+    setSearch(input);
+
+    console.log(input);
   }
 
   return (
     <div>
-      <button id="Search_Text_Span" onClick={handleClick}>
+      <button onClick={handleClick} id="Search_Text_Span">
         Search
       </button>
       <input type="text" id="Searcher_Input" onChange={handleChange}></input>
