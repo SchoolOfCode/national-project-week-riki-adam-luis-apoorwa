@@ -6,7 +6,7 @@ export function LinksList({ links }) {
   return (
     <div className="LinksList_Container">
       <div className="Links_Back_Button_Container">
-        <button id="Back_Button">Back</button>
+        {/* <button id="Back_Button">Back</button> */}
       </div>
       <div className="LinksListItem_Container">
         {links.map((item) => {
