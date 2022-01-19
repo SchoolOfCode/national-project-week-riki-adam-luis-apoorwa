@@ -1,0 +1,15 @@
+.CurrentDate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: cornsilk;
+}
+
+.CurrentWeek {
+  background-color: rgb(94, 147, 245);
+  border-radius: 5px;
+  color: white;
+  padding: 0 5px;
+  font-size: 13px;
+}

@@ -1,0 +1,14 @@
+.Logo {
+display: grid;
+grid-template-columns: auto 1fr;
+min-width: 100px;
+/* font-size: 1.5rem; */
+background-color: bisque
+}
+
+.ImageLogo{
+
+}
+.AppName{
+
+}
