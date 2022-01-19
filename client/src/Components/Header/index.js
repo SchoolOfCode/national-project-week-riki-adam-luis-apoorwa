@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div className="Header">
       <Logo />
-      <div className="HeaderRigthSide">
+      <div className="Header_Rigth_Side">
         <CurrentDate />
         <NavBar />
       </div>

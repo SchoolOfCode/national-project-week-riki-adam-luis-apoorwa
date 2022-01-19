@@ -1,3 +1,14 @@
 .NavBar {
-    margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 2rem;
+}
+.Menu {
+  margin-top: 0.4rem;
+  min-width: 2.5rem;
+  background-color: #32a4dc;
+  border-radius: 0.2rem;
+  height: 0.3rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

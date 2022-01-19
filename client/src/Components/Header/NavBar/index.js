@@ -1,13 +1,12 @@
 import React from 'react';
-import "./styles.css";
+import './styles.css';
 
 const NavBar = () => {
   return (
     <div className="NavBar">
-      {/* fake representation */}
-      <div>______</div>
-      <div>______</div>
-      <div>______</div>
+      <div className="Menu"></div>
+      <div className="Menu"></div>
+      <div className="Menu"></div>
     </div>
   );
 };
