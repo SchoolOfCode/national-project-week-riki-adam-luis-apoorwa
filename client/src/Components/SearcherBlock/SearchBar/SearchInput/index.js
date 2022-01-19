@@ -1,20 +1,16 @@
-import React from "react";
-import "./styles.css";
-import { useState } from "react";
+import React from 'react';
+import './styles.css';
 
 export function SearchInput({ setInput, input, setSearch }) {
   //state for input
 
   function handleChange(e) {
     const inputText = e.target.value;
-    console.log(inputText);
     setInput(inputText);
   }
 
   function handleClick() {
     setSearch(input);
-
-    console.log(input);
   }
 
   return (

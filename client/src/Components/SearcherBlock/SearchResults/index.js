@@ -1,7 +1,7 @@
-import React from "react";
-import WeekBar from "./WeekBar/index";
-import LinksList from "./LinksList/index";
-import "./styles.css";
+import React from 'react';
+import WeekBar from './WeekBar/index';
+import LinksList from './LinksList/index';
+import './styles.css';
 
 export function SearchResults({ links }) {
   return (
@@ -9,7 +9,7 @@ export function SearchResults({ links }) {
       <div className="Search_FoundText_Container">
         <h3 id="Search_Found_Text">Here's what we found:</h3>
       </div>
-      <WeekBar />
+      <WeekBar links={links} />
       <LinksList links={links} />
     </div>
   );
