@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;400&display=swap");
+
+.SearchResults_Container {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.Search_FoundText_Container {
+  background-color: white;
+  height: 0.7rem;
+}
+
+#Search_Found_Text {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto Mono", sans-serif;
+}

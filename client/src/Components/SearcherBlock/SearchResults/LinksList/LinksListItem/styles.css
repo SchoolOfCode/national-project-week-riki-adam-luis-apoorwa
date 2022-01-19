@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;400&display=swap");
+
+.LinksListItem {
+  width: 80%;
+  color: white;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+.LinksListItem_Container {
+  margin-left: 3rem;
+  padding-top: 1rem;
+}
+
+.Links_Back_Button_Container {
+  text-align: end;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}

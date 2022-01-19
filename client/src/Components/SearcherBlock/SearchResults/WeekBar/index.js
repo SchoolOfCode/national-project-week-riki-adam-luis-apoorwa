@@ -1,12 +1,13 @@
 import React from "react";
+import "./styles.css";
 
 export function WeekBar() {
-return (
-    <div>
-        <span>1</span>
-        <h2>JavaScript - Basic Introduction</h2>
+  return (
+    <div className="WeekBar_Container">
+      <h2 className="WeekBar_Number">WEEK 1</h2>
+      <h2 className="WeekBar_Title">JavaScript - Basic Introduction</h2>
     </div>
-)
+  );
 }
 
 export default WeekBar;

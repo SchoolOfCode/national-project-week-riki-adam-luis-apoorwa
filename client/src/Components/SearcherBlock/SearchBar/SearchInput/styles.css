@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;400&display=swap");
+
+#Search_Text_Span {
+  background-color: black;
+  border: 0;
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+}
+
+#Searcher_Input {
+  width: 60vw;
+  height: 1.8rem;
+  border-style: black;
+  margin: 0;
+  text-indent: 0.5rem;
+  font-size: 0.8rem;
+  font-family: "Roboto Mono", sans-serif;
+}

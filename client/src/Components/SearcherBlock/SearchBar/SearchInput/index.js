@@ -1,11 +1,17 @@
 import React from "react";
-
+import "./styles.css";
 
 export function SearchInput() {
-    return (
-    <div> 
-    <input type= "text" value="search"></input>
+  return (
+    <div>
+      <button id="Search_Text_Span">Search</button>
+      <input
+        type="text"
+        value="Search by keywords (e.g. express)"
+        id="Searcher_Input"
+      ></input>
     </div>
-    )}
+  );
+}
 
-export default SearchInput
+export default SearchInput;

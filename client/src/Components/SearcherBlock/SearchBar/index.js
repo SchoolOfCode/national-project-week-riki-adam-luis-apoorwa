@@ -1,6 +1,7 @@
 import React from "react";
 import SearchInput from "./SearchInput/index"
 import AddButton from "./AddButton/index"
+import "./styles.css"
 
 export function SearchBar() {
     return (
