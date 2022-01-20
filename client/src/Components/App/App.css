@@ -39,4 +39,17 @@
 
 .body_container {
   display: flex;
+  flex-direction: row;
+}
+
+.body_container_left {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.body_container_right {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
 }

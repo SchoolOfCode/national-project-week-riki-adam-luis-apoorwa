@@ -1,5 +1,5 @@
-import React from 'react';
-import './styles.css';
+import React from "react";
+import "./styles.css";
 
 export function SearchInput({ setInput, input, setSearch }) {
   //state for input
@@ -15,10 +15,10 @@ export function SearchInput({ setInput, input, setSearch }) {
 
   return (
     <div>
+      <input type="text" id="Searcher_Input" onChange={handleChange}></input>
       <button onClick={handleClick} id="Search_Text_Span">
         Search
       </button>
-      <input type="text" id="Searcher_Input" onChange={handleChange}></input>
     </div>
   );
 }
