@@ -1,8 +1,8 @@
-import React from "react";
-import SearchBar from "./SearchBar/index";
-import SearchResults from "./SearchResults/index";
-import "./styles.css";
-import { useEffect, useState } from "react";
+import React from 'react';
+import SearchBar from './SearchBar/index';
+import SearchResults from './SearchResults/index';
+import './styles.css';
+import { useEffect, useState } from 'react';
 
 // const API_URL = process.env.REACT_APP_API_URL;
 

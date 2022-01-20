@@ -3,14 +3,14 @@ import Input from './Input';
 import NewUserlink from './NewUserlink';
 import Title from './Title';
 
-
- const LoginComponent = () => {
-  return <div>
-  <Input />
-  <NewUserlink />
-  <Title />
-
-  </div>;
+const LoginComponent = () => {
+  return (
+    <div>
+      <Input />
+      <NewUserlink />
+      <Title />
+    </div>
+  );
 };
 
-export default LoginComponent
+export default LoginComponent;

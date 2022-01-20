@@ -1,19 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const Input = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [details, setDetails] = useState({ username: '', password: '' });
-  console.log(details);
+
   // useEffect(() => {
   //   async function fetchData() {
-  //     await fetch(
-  //       `https://soc-oneplace.herokuapp.com/data/users${}`
+  //     const response = await fetch(
+  //       `https://soc-oneplace.herokuapp.com/data/users`,
+  //       {
+  //         method: 'POST',
+  //         headers: { 'Content-Type': 'application/json' },
+  //         body: JSON.stringify(details),
+  //       }
   //     );
-
   //   }
   //   fetchData();
-  // }, []);
+  //   console.log(details);
+  // }, [details]);
 
   function validateForm() {
     return username.length > 0 && password.length > 0;
