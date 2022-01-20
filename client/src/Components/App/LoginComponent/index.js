@@ -4,7 +4,7 @@ import NewUserlink from './NewUserlink';
 import Title from './Title';
 
 
-export const LoginComponent = () => {
+ const LoginComponent = () => {
   return <div>
   <Input />
   <NewUserlink />
@@ -12,3 +12,5 @@ export const LoginComponent = () => {
 
   </div>;
 };
+
+export default LoginComponent

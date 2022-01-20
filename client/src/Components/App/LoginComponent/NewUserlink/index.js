@@ -1,7 +1,9 @@
 import React from 'react';
 
-export const NewUserlink = () => {
+ const NewUserlink = () => {
   return <div>
     
   </div>;
 };
+
+export default NewUserlink
