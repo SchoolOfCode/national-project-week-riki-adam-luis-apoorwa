@@ -3,12 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  padding-left: 2.5rem;
+  padding-left: 5.5rem;
 }
 .Current_Date {
   font-size: 1.2rem;
 }
-
 .Current_Week {
   background-color: #32a4dc;
   border-radius: 0.2rem;
