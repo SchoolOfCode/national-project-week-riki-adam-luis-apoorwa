@@ -1,0 +1,35 @@
+.Logo {
+  display: flex;
+  flex-direction: rown;
+  align-items: center;
+  min-width: 100px;
+}
+.images {
+  padding-top: 0.5rem;
+}
+
+.Image_Logo {
+  max-height: 3.2rem;
+}
+.Image_Logo2 {
+  max-height: 3.4rem;
+}
+.Logo_Name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 1rem;
+}
+.App_Name {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 0;
+}
+.Underline_Logo_Name {
+  background-color: #32a4dc;
+  border-radius: 0.2rem;
+  height: 0.3rem;
+  min-width: 11rem;
+}

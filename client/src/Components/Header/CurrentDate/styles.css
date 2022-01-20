@@ -1,0 +1,17 @@
+.Current_Date_Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-left: 5.5rem;
+}
+.Current_Date {
+  font-size: 1.2rem;
+}
+.Current_Week {
+  background-color: #32a4dc;
+  border-radius: 0.2rem;
+  color: white;
+  padding: 0 5px;
+  font-size: 13px;
+}
