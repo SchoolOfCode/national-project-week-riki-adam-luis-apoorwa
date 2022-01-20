@@ -3,7 +3,7 @@ import React from 'react';
 import SearcherBlock from '../SearcherBlock/index';
 import SideBar from '../SideBar';
 import Header from '../Header';
-import LoginComponent from './LoginComponent';
+import LoginComponent from '../LoginComponent';
 
 function App() {
   return (
