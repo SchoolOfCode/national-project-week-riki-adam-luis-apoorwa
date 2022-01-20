@@ -1,8 +1,10 @@
-import React from 'react';
-import SearchBar from './SearchBar/index';
-import SearchResults from './SearchResults/index';
-import './styles.css';
-import { useEffect, useState } from 'react';
+import React from "react";
+import SearchBar from "./SearchBar/index";
+import SearchResults from "./SearchResults/index";
+import "./styles.css";
+import { useEffect, useState } from "react";
+
+// const API_URL = process.env.REACT_APP_API_URL;
 
 export function SearcherBlock() {
   const [links, setLinks] = useState([]);
@@ -14,6 +16,7 @@ export function SearcherBlock() {
     async function fetchData() {
       let response = await fetch(
         `https://soc-oneplace.herokuapp.com/weeks?subject=${search}`
+        //`${API_URL}/weeks?subject=${search}`
       );
       const data = await response.json();
       setLinks(data.payload);
