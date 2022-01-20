@@ -15,7 +15,7 @@ export function SearcherBlock() {
   useEffect(() => {
     async function fetchData() {
       let response = await fetch(
-        `https://soc-oneplace.herokuapp.com/weeks?subject=${search}`
+        `https://soc-oneplace.herokuapp.com/data/weeks?subject=${search}`
         //`${API_URL}/weeks?subject=${search}`
       );
       const data = await response.json();
