@@ -1,0 +1,24 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 30vw;
+  margin: 0 auto;
+  margin-top: 1rem;
+  background-color: #32a4dc;
+  border-radius: 0.2rem;
+  line-height: 2rem;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #32a4dc;
+  background-color: #32a4dc;
+  color: white;
+}
+button {
+  border: 1px solid green;
+  background-color: green;
+  cursor: pointer;
+  color: white;
+  border-radius: 0;
+}
