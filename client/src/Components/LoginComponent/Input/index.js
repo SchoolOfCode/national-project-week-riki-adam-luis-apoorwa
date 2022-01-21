@@ -53,7 +53,7 @@ const Input = () => {
             onChange={(e) => setUsername(e.target.value)}
           />
           <input
-            type="text"
+            type="password"
             placeholder="Password"
             className="password_input_field"
             onChange={(e) => setPassword(e.target.value)}
