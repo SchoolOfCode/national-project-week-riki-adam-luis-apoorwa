@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import './styles.css';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import "./styles.css";
 
 const Input = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [details, setDetails] = useState({ username: '', password: '' });
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [details, setDetails] = useState({ username: "", password: "" });
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     axios
-      .post('https://soc-oneplace.herokuapp.com/data/users/login', {
+      .post("https://soc-oneplace.herokuapp.com/data/users/login", {
         username: username,
         password: password,
       })
@@ -45,21 +45,39 @@ const Input = () => {
   return !isLoggedIn ? (
     <div className="Input_Container">
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Username"
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Password"
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button disabled={!validateForm()}>Login</button>
+        <div>
+          <input
+            type="text"
+            className="username_input_field"
+            placeholder="Username"
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            className="password_input_field"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        <button className="login_button" disabled={!validateForm()}>
+          Login
+        </button>
       </form>
     </div>
   ) : (
-    <div>Let's go! 🚀</div>
+    <div className="Welcome_Container">
+      <h2 className="Welcome_Name">Welcome back, John Doe!</h2>
+      <div className="Block_Quote">
+        <h3 className="Welcome_Quote">
+          "Success is not final, failure is not fatal: it is the courage to
+          continue that counts."
+        </h3>
+        <h4 className="Welcome_Quote_Author">
+          Quote of the day - Winston Churchill
+        </h4>
+        <div className="Underline_Greeting"></div>
+      </div>
+    </div>
   );
 };
 
