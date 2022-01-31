@@ -1,0 +1,13 @@
+.Weeks_Buttons button {
+  margin-top: 0.5rem;
+  background-color: rgb(50, 164, 220);
+  border: 0;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  color: white;
+  margin-left: 0.5rem;
+  min-width: 2.2rem;
+}

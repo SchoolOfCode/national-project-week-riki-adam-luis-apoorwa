@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import './styles.css'
+import './styles.css';
 
-const Form = () => {
+const Form = ({ setAdd }) => {
   const { register, handleSubmit, reset } = useForm();
   const [post, setPost] = useState([]);
   function onSubmit(data) {
@@ -17,17 +17,18 @@ const Form = () => {
       );
       const { payload } = await response.json();
       setPost(payload);
-      console.log(post);
+      setAdd(false)
     }
     postLink();
     reset();
   }
-
+  
   return (
     <div>
       <form onSubmit={handleSubmit(onSubmit)}>
         <label>Week Number</label>
         <input
+          placeholder="Select a week number"
           name="weekNumber"
           type="number"
           {...register('weekNumber', {
@@ -37,6 +38,7 @@ const Form = () => {
         <label>Subject</label>
 
         <input
+          placeholder="Javascript, React, Testing..."
           name="subject"
           type="text"
           {...register('subject', {
@@ -46,6 +48,7 @@ const Form = () => {
         <label>Topic</label>
 
         <input
+          placeholder="Title for your link"
           name="topic"
           type="text"
           {...register('topic', {
@@ -55,6 +58,7 @@ const Form = () => {
         <label>Link</label>
 
         <input
+          placeholder="URL"
           name="link"
           type="text"
           {...register('link', {
