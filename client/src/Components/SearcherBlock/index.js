@@ -1,12 +1,14 @@
 import React from 'react';
 import SearchBar from './SearchBar/index';
 import SearchResults from './SearchResults/index';
+import Form from '../Form'
 import './styles.css';
 import { useEffect, useState } from 'react';
 
 // const API_URL = process.env.REACT_APP_API_URL;
 
 export function SearcherBlock() {
+  const [add, setAdd] = useState(false)
   const [links, setLinks] = useState([]);
   const [input, setInput] = useState(null);
 
@@ -27,8 +29,9 @@ export function SearcherBlock() {
   // console.log(links);
   return (
     <div className="SearchBlock_Container">
-      <SearchBar setInput={setInput} input={input} setSearch={setSearch} />
+      <SearchBar setInput={setInput} input={input} setSearch={setSearch} setAdd={setAdd}/>
       <SearchResults links={links} />
+      {add && <Form />}
     </div>
   );
 }
