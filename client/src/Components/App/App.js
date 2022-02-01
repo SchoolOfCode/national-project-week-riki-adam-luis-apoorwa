@@ -17,7 +17,10 @@ function App() {
         <div className="body_container_right">
           <SideBar />
         </div>
+        
       </div>
+      
+      
     </div>
   );
 }

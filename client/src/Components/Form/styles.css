@@ -1,0 +1,22 @@
+form input {
+    width: 40vw;
+    height: 1.8rem;
+    border-style: black;
+    margin: 0;
+    text-indent: 0.5rem;
+    font-size: 0.8rem;
+    font-family: "Roboto Mono", sans-serif;
+  }
+
+form button {
+    width: 40vw;
+    background-color: black;
+    border: 0;
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    color: white;
+    font-weight: 900;
+  }
